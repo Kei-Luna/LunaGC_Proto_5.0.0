@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message SceneDataNotify {
+    repeated uint32 scene_tag_id_list = 5;
+    repeated string level_config_name_list = 9;
+    //PHJGPIPOKAA GALJCIMKFCH = 10;//MapLayer
+    //CGMAOKBGOHO DFNDKDAFEJO = 15;
+}

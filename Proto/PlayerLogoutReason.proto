@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum PlayerLogoutReason {
+    DISCONNECT = 0;
+    CLIENT_REQ = 1;
+    TIMEOUT = 2;
+    ADMIN_REQ = 3;
+    SERVER_CLOSE = 4;
+    GM_CLEAR = 5;
+    PLAYER_TRANSFER = 6;
+    CLIENT_CHECKSUM_INVALID = 7;
+    MUIP_MOVE_SAVE_WAIT = 8;
+}

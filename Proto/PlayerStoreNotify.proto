@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Item.proto";
+import "StoreType.proto";
+
+message PlayerStoreNotify {
+    repeated Item item_list = 1;
+    StoreType store_type = 5;
+    uint32 weight_limit = 8;
+}

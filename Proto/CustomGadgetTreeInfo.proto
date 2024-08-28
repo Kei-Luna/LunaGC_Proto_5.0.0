@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "CustomCommonNodeInfo.proto";
+
+// 5.0.0
+message CustomGadgetTreeInfo {
+    repeated CustomCommonNodeInfo node_list = 1;
+}

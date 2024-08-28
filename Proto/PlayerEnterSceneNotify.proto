@@ -1,0 +1,32 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+import "EnterType.proto";
+
+message PlayerEnterSceneNotify {
+    bool JDNGEPMPFOH = 1;
+    Vector MBFONBLMNBL = 2;
+    uint32 world_level = 3;
+    uint32 target_uid = 4;
+    uint64 scene_begin_time = 5;
+    repeated uint32 scene_tag_id_list = 6;
+    uint32 enter_scene_token = 7;
+    uint32 GAPLFMMGBFA = 11;
+    uint32 GPJHAEEMCBK = 12;
+    Vector pos = 13;
+    uint32 scene_id = 14;
+    EnterType type = 15;
+    //CGMAOKBGOHO DFNDKDAFEJO = 96;
+    uint32 ALJNJKPMOPB = 338;
+    uint32 EKIBACGBHCJ = 358;
+    uint32 KDHNDLANKNI = 464;
+    //GJNOBDELMLF BFPGBNDFGBO = 681;
+    //PHJGPIPOKAA GALJCIMKFCH = 740;
+    Vector KMDLMKGJIHH = 776;
+    bool GBHGABLFDME = 816;
+    uint32 DDGBKGDECME = 1148;
+    string scene_transaction = 1492;
+    uint32 KKLADMFLAOE = 1696;
+    uint32 OKCAGDNDEJN = 1870;
+}

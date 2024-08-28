@@ -1,0 +1,55 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PlayerLoginReq {
+    string platform = 14;
+    string FBKHEDNNFIF = 1669;
+    string JIPHKNNHBIE = 924;
+    string CBIEHLMFBHI = 1433;
+    string IMACIIGIOGC = 10;
+    string JJIOHIJNGFP = 3;
+    string token = 7;
+    bytes extra_bin_data = 1183;
+    string LPFPAJBHJMH = 46;
+    //LHACJNELJMN KOFGDJGJPLH = 1939;
+    bytes OFMIHDNGFNM = 265;
+    string online_id = 376;
+    string KEODMFOKNGH = 5;
+    string MEEGOICDEFG = 525;
+    string MDIKIHJHHJJ = 4;
+    string HCJGLLHFCMA = 1548;
+    string LLIMBPCEABN = 86;
+    //CNIFDNMIKIF FDNODKOBNFH = 1420;
+    string country_code = 1774;
+    bytes PFDFHPKIHMO = 197;
+    string IMCMLAGLODL = 1146;
+    string NNBGJPGDGCP = 13;
+    string CDDBBPKKOPM = 921;
+    string psn_id = 1762;
+    string birthday = 1179;
+    string PECPGFPBJEB = 216;
+    string account_uid = 11;
+    uint32 account_type = 9;
+    uint32 FNPPPMBIBEM = 345;
+    uint32 PLNNJPFPPAM = 2029;
+    uint32 target_home_owner_uid = 226;
+    bool is_guest = 6;
+    bool HAAGGONEHCH = 1;
+    bool JAGELBDJFJH = 1641;
+    uint64 login_rand = 12;
+    uint32 OCINFHOJCEA = 725;
+    uint32 tag = 1158;
+    uint32 KPCGBPCHBMJ = 507;
+    uint32 client_data_version = 420;
+    uint32 NCNKMDBAFEH = 1370;
+    uint32 EPAGBFLKJBN = 1691;
+    uint32 gm_uid = 689;
+    uint32 BFPJPDCLFNM = 15;
+    uint32 IKKKLHICPMF = 1977;
+    uint32 MCKEONLBAOA = 1521;
+    uint32 platform_type = 2;
+    uint32 KEKHAKAPMIN = 256;
+    uint32 target_uid = 8;
+    uint32 DKGAONKKOHA = 1280;
+}

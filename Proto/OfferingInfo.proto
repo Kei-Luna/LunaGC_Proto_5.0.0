@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// 5.0.0
+message OfferingInfo {
+    uint32 offering_id = 1;
+}

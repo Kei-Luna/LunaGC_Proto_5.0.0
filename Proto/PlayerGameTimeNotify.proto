@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PlayerGameTimeNotify {
+    uint32 game_time = 4;
+    bool is_home = 9;
+    uint32 uid = 15;
+}

@@ -1,0 +1,31 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message GetPlayerTokenReq {
+    string HCJGLLHFCMA = 1304;
+    string online_id = 13;
+    string BPFIMEKJANE = 9;
+    string country_code = 1;
+    string account_token = 4;
+    string psn_id = 10;
+    string JLCDDOJGKKG = 1528;
+    string account_uid = 3;
+    string client_rand_key = 94;
+    string BDGFMEIEHOD = 5;
+    string client_ip_str = 7;
+    string birthday = 594;
+    string ADFHNBPGAGM = 1804;
+    uint32 platform_type = 2;
+    uint32 IKKKLHICPMF = 12;
+    uint32 account_type = 8;
+    uint32 OCINFHOJCEA = 15;
+    uint32 CIJPMGMCJBA = 1776;
+    uint32 uid = 6;
+    uint32 MPGMOFLCEOF = 1730;
+    bool is_guest = 14;
+    uint32 KODKEFGJHAP = 168;
+    uint32 key_id = 1485;
+    uint32 KEKHAKAPMIN = 11;
+    uint32 JDHCKKAGBNL = 1686;
+}

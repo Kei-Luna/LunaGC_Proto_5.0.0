@@ -1,0 +1,48 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ShortAbilityHashPair.proto";
+import "ResVersionConfig.proto";
+import "FeatureBlockInfo.proto";
+import "StopServerInfo.proto";
+import "BlockInfo.proto";
+
+message PlayerLoginRsp {
+    bool is_new_player = 1;
+    string game_biz = 2;
+    bool OAMCACIICJJ = 3;
+    bytes player_data = 4;
+    uint32 target_uid = 5;
+    bool PCNBCFNBPGF = 6;
+    int32 ability_hash_code = 8;
+    uint64 login_rand = 9;
+    uint32 player_data_version = 10;
+    uint32 client_silence_data_version = 11;
+    int32 retcode = 12;
+    map<string, int32> ability_hash_map = 14;
+    uint32 client_data_version = 15;
+    bool POPJGOJFOKA = 67;
+    repeated ShortAbilityHashPair short_ability_hash_map = 90;
+    ResVersionConfig res_version_config = 113;
+    bool KLLPFNOLBHO = 179;
+    string KECGLOKOIDC = 249;
+    repeated FeatureBlockInfo feature_block_info_list = 336;
+    bool EFPHHJIKPJG = 451;
+    bytes sc_info = 793;
+    string client_silence_version_suffix = 1096;
+    uint32 target_home_owner_uid = 1147;
+    bool JAGELBDJFJH = 1189;
+    string msg = 1207;
+    bool CLJBEGINENC = 1298;
+    double total_tick_time = 1456;
+    string client_version_suffix = 1490;
+    StopServerInfo ABPMACCDDJH = 1530;
+    string next_resource_url = 1549;
+    string PKEKLEEOLJL = 1594;
+    map<uint32, BlockInfo> block_info_map = 1596;
+    string birthday = 1689;
+    string JKANELMFGEP = 1728;
+    bool FGFIHNBMJMK = 1869;
+    string country_code = 1898;
+    ResVersionConfig next_res_version_config = 1975;
+}
