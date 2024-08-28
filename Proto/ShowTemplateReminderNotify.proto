@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message ShowTemplateReminderNotify {
+	bool teis_need_cache = 3;
+	repeated int32 param_list = 4;
+	repeated uint32 param_uid_list = 6;
+	uint32 template_reminder_id = 9;
+	bool is_revoke = 10;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ActivityScheduleInfo.proto";
+
+message ActivityScheduleInfoNotify {
+	uint32 remain_fly_sea_lamp_num = 1;
+	repeated ActivityScheduleInfo activity_schedule_list = 12;
+}

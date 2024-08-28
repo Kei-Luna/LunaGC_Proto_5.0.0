@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PotionDungeonResultInfo {
+	uint32 PJJAOILBFBN = 3;
+	uint32 LJEJEBELKMJ = 5;
+	uint32 LJFAFDHIKJD = 7;
+	uint32 MEMPKCGNNMF = 9;
+	uint32 KDPLCBJGBAF = 12;
+	uint32 final_score = 15;
+}

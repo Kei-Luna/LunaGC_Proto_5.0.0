@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum EdgeType {
+	INNER = 0;
+	TILE_BOUND = 1;
+	TILE_BOUND_UNCONNECT = 2;
+	TILE_BOUND_OVERIDE = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message BattlePassChangeRewardPlanRsp {
+	bool HNDKICJJANM = 4;
+	int32 retcode = 5;
+	repeated uint32 affected_tier_id_list = 6;
+	uint32 default_reward_type = 9;
+	bool FKKMIHOEGMG = 12;
+}

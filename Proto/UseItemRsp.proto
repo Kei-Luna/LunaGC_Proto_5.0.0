@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message UseItemRsp {
+	uint64 target_guid = 2;
+	int32 retcode = 5;
+	uint32 option_idx = 11;
+	uint64 guid = 12;
+	uint32 item_id = 14;
+}

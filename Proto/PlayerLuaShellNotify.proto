@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "LuaShellType.proto";
+
+message PlayerLuaShellNotify {
+	uint32 id = 3;
+	uint32 use_type = 9;
+	bytes lua_shell = 10;
+	LuaShellType shell_type = 11;
+}

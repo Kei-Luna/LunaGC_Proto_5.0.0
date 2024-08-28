@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message GetParentQuestVideoKeyRsp {
+	uint32 parent_quest_id = 10;
+	int32 retcode = 14;
+	uint64 video_key = 15;
+}

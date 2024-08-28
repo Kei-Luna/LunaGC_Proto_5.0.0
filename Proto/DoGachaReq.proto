@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message DoGachaReq {
+	string gacha_tag = 13;
+	uint32 gacha_schedule_id = 1;
+	uint32 gacha_type = 6;
+	uint32 gacha_random = 14;
+	uint32 gacha_times = 10;
+}

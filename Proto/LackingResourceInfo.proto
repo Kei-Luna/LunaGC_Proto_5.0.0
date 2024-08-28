@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message LackingResourceInfo {
+	repeated uint32 JAODPKILOHD = 1;
+	map<uint32, uint32> IGIDHGKOODO = 2;
+	repeated uint32 OBAKLGMMOEO = 3;
+	map<uint32, uint32> LELGNGJOJAI = 4;
+	repeated uint32 AOECKDLECIJ = 5;
+	map<uint32, uint32> ACAAJJBNCDM = 6;
+	repeated uint32 LHEGFHKBMKF = 7;
+	repeated uint32 HIIHFCBJLDI = 8;
+	repeated uint32 HCPKDCNKPGD = 9;
+}

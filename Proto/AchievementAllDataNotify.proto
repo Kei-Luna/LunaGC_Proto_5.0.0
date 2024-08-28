@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Achievement.proto";
+
+message AchievementAllDataNotify {
+	repeated Achievement achievement_list = 8;
+	repeated uint32 reward_taken_goal_id_list = 15;
+}

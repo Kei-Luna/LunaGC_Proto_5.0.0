@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message HomePreChangeEditModeNotify {
+	bool is_enter_edit_mode = 4;
+}

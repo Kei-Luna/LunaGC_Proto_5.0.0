@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "EquipParam.proto";
+
+message GetMailItemRsp {
+	repeated uint32 mail_id_list = 4;
+	repeated EquipParam item_list = 9;
+	int32 retcode = 14;
+}

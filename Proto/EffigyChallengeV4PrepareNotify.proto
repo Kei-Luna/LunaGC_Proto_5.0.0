@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "EffigyChallengeV4LevelInfo.proto";
+import "EffigyChallengeV4PlayerInfo.proto";
+
+message EffigyChallengeV4PrepareNotify {
+	EffigyChallengeV4LevelInfo level_info = 6;
+	repeated EffigyChallengeV4PlayerInfo player_info_list = 7;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "WorldRoutineTypeInfo.proto";
+
+message WorldRoutineTypeRefreshNotify {
+	WorldRoutineTypeInfo world_routine_type = 2;
+}

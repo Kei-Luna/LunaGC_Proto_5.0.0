@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// 5.0.0
+message ChatChannelInfo {
+	uint32 channel_id = 2;
+	bool is_shield = 3;
+}

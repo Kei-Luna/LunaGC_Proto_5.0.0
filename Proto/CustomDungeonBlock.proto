@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+// 5.0.0
+import "Vector.proto";
+
+message CustomDungeonBlock {
+	Vector rot = 1;
+	uint32 guid = 4;
+	Vector pos = 9;
+	uint32 block_id = 10;
+}

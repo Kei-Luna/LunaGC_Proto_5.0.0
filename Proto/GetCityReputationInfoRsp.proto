@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message GetCityReputationInfoRsp {
+	repeated uint32 LIDPFAAPFMM = 4;
+	int32 retcode = 5;
+	uint32 city_id = 8;
+	//repeated LCBGDOHINDD GAGAHOFMJLM = 9;
+}

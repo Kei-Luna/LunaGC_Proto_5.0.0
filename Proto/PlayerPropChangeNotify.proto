@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PlayerPropChangeNotify {
+	uint32 prop_delta = 7;
+	uint32 prop_type = 13;
+}

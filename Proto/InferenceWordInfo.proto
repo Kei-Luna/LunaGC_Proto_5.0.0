@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message InferenceWordInfo {
+	bool DHBPEBDBMNK = 1;
+	bool CAJHCPIPBOO = 2;
+	uint32 word_id = 4;
+	uint32 unlock_by_word_id = 5;
+	bool ENFPKOPNHKK = 11;
+}

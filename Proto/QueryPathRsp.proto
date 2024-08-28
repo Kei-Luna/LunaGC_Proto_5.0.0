@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+import "PathStatusType.proto";
+
+message QueryPathRsp {
+	PathStatusType query_status = 8;
+	int32 query_id = 9;
+	int32 retcode = 11;
+	repeated Vector corners = 15;
+}

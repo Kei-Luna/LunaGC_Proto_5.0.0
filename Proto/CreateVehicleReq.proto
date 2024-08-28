@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+
+message CreateVehicleReq {
+	Vector rot = 11;
+	Vector pos = 15;
+	uint32 vehicle_id = 7;
+	uint32 scene_point_id = 13;
+}

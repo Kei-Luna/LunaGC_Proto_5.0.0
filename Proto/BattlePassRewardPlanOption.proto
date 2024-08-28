@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message BattlePassRewardPlanOption {
+	bool OCACCJODDDO = 4;
+	uint32 default_reward_type = 6;
+	uint32 IOIHAODNIKF = 14;
+}

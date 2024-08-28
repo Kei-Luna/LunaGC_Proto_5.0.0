@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "EvtBeingHitInfo.proto";
+import "ForwardType.proto";
+
+message EvtBeingHitsCombineNotify {
+	repeated EvtBeingHitInfo evt_being_hit_info_list = 1;
+	ForwardType forward_type = 10;
+}

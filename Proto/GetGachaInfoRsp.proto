@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "GachaInfo.proto";
+
+message GetGachaInfoRsp {
+	uint32 gacha_random = 1;
+	int32 retcode = 2;
+	repeated GachaInfo gacha_info_list = 4;
+	bool is_under_minors_restrict = 10;
+	bool is_under_general_restrict = 12;
+	uint32 daily_gacha_times = 15;
+}

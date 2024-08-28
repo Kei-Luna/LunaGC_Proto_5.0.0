@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message GetFriendShowNameCardInfoRsp {
+	uint32 uid = 6;
+	repeated uint32 show_name_card_id_list = 7;
+	int32 retcode = 10;
+}

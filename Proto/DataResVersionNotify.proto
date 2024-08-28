@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "DataResVersionOpType.proto";
+import "ResVersionConfig.proto";
+
+message DataResVersionNotify {
+	string PKEKLEEOLJL = 3;
+	string client_version_suffix = 4;
+	bool is_data_need_relogin = 7;
+	uint32 client_silence_data_version = 9;
+	string JKANELMFGEP = 10;
+	DataResVersionOpType op_type = 11;
+	string client_silence_version_suffix = 13;
+	uint32 client_data_version = 14;
+	ResVersionConfig res_version_config = 15;
+}

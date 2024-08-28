@@ -1,0 +1,40 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ActivityWatcherInfo.proto";
+import "ActivityPushTipsData.proto";
+import "MusicGameActivityDetailInfo.proto";
+
+message ActivityInfo {
+    repeated uint32 meet_cond_list = 1; // 11
+    uint32 end_time = 4;
+    uint32 begin_time = 6;
+    bool is_finished = 7;
+    bool FALGLCJDKCL = 8;
+    repeated ActivityWatcherInfo watcher_info_list = 10;
+    repeated uint32 expire_cond_list = 11; // 1
+    uint32 schedule_id = 12;
+    bool ONCLIGBKLPF = 13;
+    uint32 activity_type = 14;
+    uint32 activity_id = 15;
+    uint32 cur_score = 63;
+    uint32 FFGHMFNFPNL = 253;
+    uint32 first_day_start_time = 373;
+    uint32 LKODGHFICBH = 426;
+    bool CDBIIEIPBFF = 509;
+    bool LCHFFKHPJIO = 678;
+    bool ILKPGDKEIEG = 739;
+    repeated uint32 taken_reward_list = 818;
+    uint64 CIDDJFNIMPJ = 892;
+    repeated ActivityPushTipsData activity_push_tips_data_list = 983;
+    uint32 MPPFCLCENAP = 1040;
+    repeated uint64 GONEPFEDMEL = 1246;
+    repeated uint32 NJCGNGLKPBJ = 1267;
+    bool ODMJHPBFIKO = 1408;
+    map<uint32, uint32> activity_coin_map = 1791;
+    //CFKJEDGPNAE OKBINABFBKP = 1839;
+    map<uint32, uint32> wish_gift_num_map = 1954;
+    oneof detail {
+        MusicGameActivityDetailInfo music_game_info = 1099;
+    }
+}

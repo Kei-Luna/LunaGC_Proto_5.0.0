@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PlayerTimeNotify {
+	bool is_paused = 3;
+	uint64 server_time = 7;
+	uint64 player_time = 8;
+}

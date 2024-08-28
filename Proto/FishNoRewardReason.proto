@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum FishNoRewardReason {
+	FISH_NO_REWARD_NONE = 0;
+	FISH_NO_REWARD_ACTIVITY_LIMIT = 1;
+	FISH_NO_REWARD_BAG_LIMIT = 2;
+	FISH_NO_REWARD_POOL_LIMIT = 3;
+}

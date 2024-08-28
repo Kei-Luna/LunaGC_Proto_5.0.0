@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "MapMarkPoint.proto";
+
+message BatchDelMapMarkReq {
+	repeated MapMarkPoint mark_list = 12;
+}

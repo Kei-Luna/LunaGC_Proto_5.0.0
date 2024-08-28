@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message CountDownDelete {
+	map<uint32, uint32> delete_time_num_map = 1;
+	uint32 config_count_down_time = 2;
+}

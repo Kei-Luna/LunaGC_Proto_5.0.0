@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// 5.0.0
+message MusicGameRecord {
+	uint32 max_score = 4;
+	uint32 max_combo = 9;
+	bool is_unlock = 14;
+}

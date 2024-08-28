@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message QuestProgressUpdateNotify {
+	repeated uint32 fail_progress_list = 12;
+	repeated uint32 finish_progress_list = 13;
+	uint32 quest_id = 14;
+}

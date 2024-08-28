@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message NeedPlayerLevel {
+	bool is_limit = 13;
+	uint32 config_need_player_level = 14;
+}

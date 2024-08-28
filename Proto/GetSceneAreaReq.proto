@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message GetSceneAreaReq {
+	uint32 scene_id = 13;
+	uint32 belong_uid = 11;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "PlayerLocationInfo.proto";
+import "VehicleLocationInfo.proto";
+
+message ScenePlayerLocationNotify {
+	repeated PlayerLocationInfo player_loc_list = 3;
+	uint32 scene_id = 10;
+	repeated VehicleLocationInfo vehicle_loc_list = 11;
+}

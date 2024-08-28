@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message SetFriendRemarkNameReq {
+	string remark_name = 14;
+	uint32 uid = 12;
+}

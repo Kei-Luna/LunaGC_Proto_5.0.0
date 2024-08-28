@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "MatchType.proto";
+import "OnlinePlayerInfo.proto";
+
+message PlayerApplyEnterMpAfterMatchAgreedNotify {
+	uint32 matchserver_id = 3;
+	MatchType match_type = 5;
+	OnlinePlayerInfo src_player_info = 13;
+}

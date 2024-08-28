@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message QueryFilter {
+	int32 MJEFLBPJBKM = 7;
+	int32 NOLJBNBNLML = 9;
+}

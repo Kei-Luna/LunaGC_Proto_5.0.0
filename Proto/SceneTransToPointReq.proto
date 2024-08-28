@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message SceneTransToPointReq {
+	uint32 scene_id = 7;
+	uint32 point_id = 11;
+}

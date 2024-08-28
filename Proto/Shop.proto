@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ShopMcoinProduct.proto";
+import "ShopCardProduct.proto";
+import "ShopGoods.proto";
+import "ShopConcertProduct.proto";
+
+message Shop {
+	uint32 city_reputation_level = 2; // 5
+	uint32 shop_type = 3;
+	uint32 next_refresh_time = 4;
+	uint32 DGEAKOFNGDN = 5;
+	repeated ShopMcoinProduct mcoin_product_list = 7;
+	repeated ShopCardProduct card_product_list = 9;
+	repeated ShopGoods goods_list = 10;
+	repeated ShopConcertProduct concert_product_list = 12;
+	uint32 city_id = 14;
+}

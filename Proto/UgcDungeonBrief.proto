@@ -1,0 +1,24 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message UgcDungeonBrief {
+	uint32 PEIOEFBCMFP = 1;
+	bool DHAOMGMMDPD = 2;
+	string EBBPBOEJJPP = 3;
+	repeated uint32 tag_list = 4;
+	//EKPABLIFILG JAPDKNHENLD = 5;
+	//DFAFGEPBLDO EHLOECHHEPI = 6;
+	uint32 KFEHEOJCKLB = 7;
+	//repeated NPFPJAHEIDH KOHLIMEPNPM = 8;
+	uint32 OPPFABKNMMB = 9;
+	uint32 dungeon_id = 10;
+	//KBMIGNFIMKF FPOJGLANECO = 11;
+	uint64 dungeon_guid = 12;
+	string DPPIBJFOMOC = 13;
+	uint32 IIACGGOGMLP = 14;
+	bool JFOEEKHEIMO = 15;
+	bool PFLAJCKEHFA = 838;
+	uint32 DGBMJCFHLBB = 910;
+	bool ANICOPJPCFM = 1448;
+}

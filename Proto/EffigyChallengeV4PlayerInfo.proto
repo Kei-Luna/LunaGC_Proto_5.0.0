@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "EffigyChallengeV4AvatarInfo.proto";
+import "EffigyChallengeV4PrepareState.proto";
+
+message EffigyChallengeV4PlayerInfo {
+	repeated EffigyChallengeV4AvatarInfo FEECGJBPDFA = 3;
+	uint32 uid = 5;
+	EffigyChallengeV4PrepareState prepare_state = 9;
+	repeated EffigyChallengeV4AvatarInfo BPFFLKLBGOD = 13;
+}

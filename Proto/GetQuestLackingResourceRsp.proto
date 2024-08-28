@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "LackingResourceInfo.proto";
+
+message GetQuestLackingResourceRsp {
+	uint32 quest_id = 4;
+	LackingResourceInfo lacking_resources_info = 8;
+	int32 retcode = 10;
+}

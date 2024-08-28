@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+message BattlePassMission {
+	enum MissionStatus {
+		MISSION_STATUS_INVALID = 0;
+		MISSION_STATUS_UNFINISHED = 1;
+		MISSION_STATUS_FINISHED = 2;
+		MISSION_STATUS_POINT_TAKEN = 3;
+	}
+	uint32 mission_id = 7;
+	MissionStatus mission_status = 9;
+	uint32 reward_battle_pass_point = 10;
+	uint32 total_progress = 13;
+	uint32 cur_progress = 14;
+	uint32 mission_type = 15;
+}

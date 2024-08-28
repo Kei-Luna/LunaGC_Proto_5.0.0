@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum Operation {
+	ADD = 0;
+	MOD = 1;
+	DEL = 2;
+	GET = 3;
+}

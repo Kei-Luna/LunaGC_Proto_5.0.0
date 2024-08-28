@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message GetAreaExplorePointReq {
+	repeated uint32 area_id_list = 11;
+}

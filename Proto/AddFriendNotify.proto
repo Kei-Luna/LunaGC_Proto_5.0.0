@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "FriendBrief.proto";
+
+message AddFriendNotify {
+	uint32 target_uid = 11;
+	FriendBrief target_friend_brief = 12;
+}

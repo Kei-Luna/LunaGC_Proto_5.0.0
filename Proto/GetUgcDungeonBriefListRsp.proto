@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "UgcDungeonStarredRoomData.proto";
+import "UgcDungeonBrief.proto";
+import "GetUgcDungeonBriefType.proto";
+
+message GetUgcDungeonBriefListRsp {
+	repeated UgcDungeonStarredRoomData starred_room_list = 7;
+	repeated UgcDungeonBrief brief_list = 8;
+	int32 retcode = 9;
+	GetUgcDungeonBriefType get_brief_type = 12;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ChallengeBrief.proto";
+import "CustomDungeonFinishType.proto";
+
+message CustomDungeonResultInfo {
+	repeated ChallengeBrief child_challenge_list = 2;
+	uint32 got_coin_num = 3;
+	bool FOLIKAAIKIE = 5;
+	bool GBLHFAEONKM = 6;
+	CustomDungeonFinishType finish_type = 10;
+	uint32 time_cost = 11;
+	bool is_arrive_finish = 14;
+	uint64 dungeon_guid = 15;
+}

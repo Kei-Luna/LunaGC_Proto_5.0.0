@@ -1,0 +1,35 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "GachaUpInfo.proto";
+
+message GachaInfo {
+	uint32 end_time = 1;
+	uint32 wish_progress = 2;
+	uint32 ten_cost_item_num = 3;
+	string gacha_preview_prefab_path = 4;
+	uint32 begin_time = 5;
+	string gacha_record_url = 6;
+	uint32 cost_item_num = 7;
+	uint32 schedule_id = 8;
+	string gacha_prob_url = 9;
+	uint32 gacha_type = 10;
+	string gacha_prefab_path = 11;
+	uint32 cost_item_id = 12;
+	uint32 wish_max_progress = 13;
+	uint32 left_gacha_times = 14;
+	uint32 gacha_times_limit = 15;
+	repeated uint32 display_up5_item_list = 99;
+	uint32 ten_cost_item_id = 243;
+	bool is_new_wish = 251;
+	uint32 wish_item_id = 599;
+	string title_textmap = 782;
+	string gacha_prob_url_oversea = 798;
+	uint32 cur_schedule_daily_gacha_times = 1087;
+	repeated uint32 display_chronicle5_item_list = 1448;
+	bool LAGAHPEKLHM = 1509;
+	repeated GachaUpInfo gacha_up_info_list = 1711;
+	repeated uint32 display_up4_item_list = 1882;
+	uint32 gacha_sort_id = 1938;
+	string gacha_record_url_oversea = 1984;
+}

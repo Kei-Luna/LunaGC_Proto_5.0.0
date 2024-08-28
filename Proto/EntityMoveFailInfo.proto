@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+// 5.0.0
+import "MotionInfo.proto";
+
+message EntityMoveFailInfo {
+	MotionInfo fail_motion = 1;
+	uint32 scene_time = 5;
+	int32 retcode = 6;
+	uint32 entity_id = 7;
+	uint32 reliable_seq = 10;
+}

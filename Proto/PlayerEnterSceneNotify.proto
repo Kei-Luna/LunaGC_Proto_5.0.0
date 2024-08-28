@@ -12,7 +12,7 @@ message PlayerEnterSceneNotify {
     uint64 scene_begin_time = 5;
     repeated uint32 scene_tag_id_list = 6;
     uint32 enter_scene_token = 7;
-    uint32 GAPLFMMGBFA = 11;
+    uint32 dungeon_id = 11;
     uint32 GPJHAEEMCBK = 12;
     Vector pos = 13;
     uint32 scene_id = 14;

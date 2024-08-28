@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "DeathZoneInfo.proto";
+
+message DeathZoneInfoNotify {
+	repeated DeathZoneInfo death_zone_info_list = 1;
+}

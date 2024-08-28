@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message QuestDestroyNpcReq {
+	uint32 npc_id = 4;
+	uint32 parent_quest_id = 12;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "SceneEntityInfo.proto";
+
+message AvatarChangeCostumeNotify {
+	SceneEntityInfo entity_info = 15;
+}

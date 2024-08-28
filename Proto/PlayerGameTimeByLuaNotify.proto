@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PlayerGameTimeByLuaNotify {
+	uint32 uid = 3;
+	uint32 game_time = 11;
+	uint32 sim_speed = 13;
+}

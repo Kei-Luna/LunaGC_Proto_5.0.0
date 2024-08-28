@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum GetUgcDungeonBriefType {
+	GetUgcDungeonBriefType_NONE = 0;
+	GetUgcDungeonBriefType_STARRED_DUNGEON = 1;
+	GetUgcDungeonBriefType_STARRED_ROOM = 2;
+	GetUgcDungeonBriefType_OWNER = 3;
+	GetUgcDungeonBriefType_HISTORY = 4;
+	GetUgcDungeonBriefType_SEARCH = 5;
+	GetUgcDungeonBriefType_OFFICIAL = 6;
+	GetUgcDungeonBriefType_TEMPLATE = 7;
+}

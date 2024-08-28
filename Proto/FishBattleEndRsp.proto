@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ItemParam.proto";
+import "FishNoRewardReason.proto";
+import "FishBattleResult.proto";
+
+message FishBattleEndRsp {
+	repeated ItemParam OICHDIANAEE = 1;
+	int32 retcode = 2;
+	repeated ItemParam reward_item_list = 3;
+	FishNoRewardReason no_reward_reason = 6;
+	FishBattleResult battle_result = 7;
+	bool is_got_reward = 11;
+	repeated ItemParam LEPOMLNOAPK = 12;
+}

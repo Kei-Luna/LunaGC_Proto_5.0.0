@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Quest.proto";
+
+message QuestListNotify {
+	repeated Quest quest_list = 15;
+}

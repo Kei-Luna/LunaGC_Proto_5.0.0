@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "BattlePassSchedule.proto";
+import "BattlePassMission.proto";
+
+message BattlePassAllDataNotify {
+	bool have_cur_schedule = 1;
+	BattlePassSchedule cur_schedule = 3;
+	bool HNDKICJJANM = 8;
+	bool is_viewed = 9;
+	repeated BattlePassMission mission_list = 12;
+	uint32 default_reward_type = 13;
+}

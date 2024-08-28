@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message QuestTransmitRsp {
+	uint32 quest_id = 12;
+	uint32 point_id = 13;
+	int32 retcode = 14;
+}

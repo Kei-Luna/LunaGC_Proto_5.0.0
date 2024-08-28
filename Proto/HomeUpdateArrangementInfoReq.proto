@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "HomeSceneArrangementInfo.proto";
+
+message HomeUpdateArrangementInfoReq {
+	HomeSceneArrangementInfo scene_arrangement_info = 8;
+}

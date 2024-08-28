@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message NeedBeginTime {
+	uint32 config_need_begin_time = 4;
+	bool is_limit = 9;
+}

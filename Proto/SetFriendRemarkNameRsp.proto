@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message SetFriendRemarkNameRsp {
+	uint32 uid = 7;
+	int32 retcode = 8;
+	string remark_name = 9;
+	bool is_clear_remark = 13;
+}

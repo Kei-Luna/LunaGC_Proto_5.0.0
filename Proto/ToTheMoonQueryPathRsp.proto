@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+import "PathStatusType.proto";
+
+message ToTheMoonQueryPathRsp {
+	repeated int32 level = 1;
+	int32 retcode = 7;
+	repeated Vector corners = 9;
+	PathStatusType query_status = 10;
+	int32 query_id = 13;
+	repeated int64 index = 15;
+}

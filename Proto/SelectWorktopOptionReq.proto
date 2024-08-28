@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message SelectWorktopOptionReq {
+	uint32 CHDDOFMLBLM = 8;
+	uint32 gadget_entity_id = 1;
+	uint32 option_id = 13;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ItemParam.proto";
+
+// 5.0.0
+// CmdId: 22669
+message TowerLevelEndNotify {
+	enum ContinueStateType {
+        CONTINUE_STATE_TYPE_CAN_NOT_CONTINUE = 0;
+        CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_LEVEL = 1;
+        CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_FLOOR = 2;
+    }
+	repeated ItemParam reward_item_list = 1;
+	uint32 next_floor_id = 3;//sus 11
+	repeated uint32 finished_star_cond_list = 8;
+	uint32 continue_state = 11;//sus 3
+	bool is_success = 12;
+}

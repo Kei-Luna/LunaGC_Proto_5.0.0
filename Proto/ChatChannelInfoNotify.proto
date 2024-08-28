@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ChatChannelInfo.proto";
+
+message ChatChannelInfoNotify {
+	ChatChannelInfo channel_info = 15;
+}

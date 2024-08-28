@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message PlayerGetForceQuitBanInfoRsp {
+	uint32 match_id = 2;
+	int32 retcode = 9;
+	uint32 expire_time = 14;
+}

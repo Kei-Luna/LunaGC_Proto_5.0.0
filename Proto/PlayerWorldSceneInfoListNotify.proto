@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "PlayerWorldSceneInfo.proto";
+
+message PlayerWorldSceneInfoListNotify {
+	repeated PlayerWorldSceneInfo info_list = 13;
+	repeated uint32 KNFOKJBGBEI = 1055;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum ChangeEnergyReason {
+	CHANGE_ENERGY_REASON_NONE = 0;
+	CHANGE_ENERGY_REASON_SKILL_START = 1;
+	CHANGE_ENERGY_REASON_BALL = 2;
+	CHANGE_ENERGY_REASON_QUEST = 3;
+	CHANGE_ENERGY_REASON_ABILITY = 4;
+	CHANGE_ENERGY_REASON_DIE = 5;
+	CHANGE_ENERGY_REASON_SKILL_DEPOT = 6;
+}

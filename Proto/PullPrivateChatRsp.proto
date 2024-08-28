@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ChatInfo.proto";
+
+message PullPrivateChatRsp {
+	int32 retcode = 5;
+	repeated ChatInfo chat_info = 14;
+}

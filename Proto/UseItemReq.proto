@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message UseItemReq {
+	uint32 count = 9;
+	uint32 option_idx = 6;
+	uint64 target_guid = 5;
+	bool is_enter_mp_dungeon_team = 10;
+	uint64 guid = 4;
+}

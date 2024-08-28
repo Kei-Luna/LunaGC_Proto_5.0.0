@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "AbilityString.proto";
+import "PlayerDieType.proto";
+
+message WorldPlayerDieNotify {
+	AbilityString GOEACHAMIAF = 1;
+	uint32 murderer_entity_id = 5; // 7
+	uint32 GKHNLKAADNG = 7;
+	PlayerDieType die_type = 15;
+	oneof Entity {
+		uint32 gadget_id = 3;
+		uint32 monster_id = 11;
+	}
+}

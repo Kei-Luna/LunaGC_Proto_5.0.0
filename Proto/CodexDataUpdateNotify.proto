@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "CodexType.proto";
+
+message CodexDataUpdateNotify {
+	uint32 id = 1;
+	CodexType type = 2;
+	uint32 weapon_max_promote_level = 14;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ActivityInfo.proto";
+
+message ActivityInfoNotify {
+	ActivityInfo activity_info = 6;
+}

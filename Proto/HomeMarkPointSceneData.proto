@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "HomeMarkPointFurnitureData.proto";
+import "Vector.proto";
+
+message HomeMarkPointSceneData {
+	uint32 scene_id = 2;
+	repeated HomeMarkPointFurnitureData furniture_list = 4;
+	Vector teapot_spirit_pos = 5;
+	Vector safe_point_pos = 7;
+	uint32 module_id = 13;
+}

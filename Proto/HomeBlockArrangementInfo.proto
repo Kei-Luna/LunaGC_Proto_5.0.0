@@ -1,0 +1,28 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "HomeFurnitureData.proto";
+import "HomeBlockDotPattern.proto";
+import "HomeFurnitureGroupData.proto";
+import "HomeNpcData.proto";
+import "HomeAnimalData.proto";
+import "HomeFurnitureCustomSuiteData.proto";
+import "HomeFurnitureSuiteData.proto";
+import "WeekendDjinnInfo.proto";
+import "HomeBlockFieldData.proto";
+
+message HomeBlockArrangementInfo {
+	uint32 comfort_value = 1;
+	repeated HomeFurnitureData deploy_furniure_list = 2;
+	repeated HomeBlockDotPattern dot_pattern_list = 3;
+	repeated HomeFurnitureData persistent_furniture_list = 4;
+	repeated HomeFurnitureGroupData furniture_group_list = 6;
+	repeated HomeNpcData deploy_npc_list = 8;
+	repeated HomeAnimalData deploy_animal_list = 9;
+	repeated HomeFurnitureCustomSuiteData furniture_custom_suite_list = 10;
+	repeated HomeFurnitureSuiteData furniture_suite_list = 11;
+	uint32 block_id = 12;
+	bool is_unlocked = 13;
+	repeated WeekendDjinnInfo weekend_djinn_info_list = 14;
+	repeated HomeBlockFieldData field_list = 15;
+}

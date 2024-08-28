@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+import "ForwardType.proto";
+
+message EvtDoSkillSuccNotify {
+	Vector forward = 4;
+	uint32 skill_id = 11;
+	ForwardType forward_type = 6;
+	uint32 caster_id = 9;
+}

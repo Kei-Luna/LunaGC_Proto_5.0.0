@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "BattlePassSchedule.proto";
+
+message BattlePassCurScheduleUpdateNotify {
+	uint32 default_reward_type = 2;
+	bool is_viewed = 3;
+	bool have_cur_schedule = 7;
+	bool HNDKICJJANM = 9;
+	BattlePassSchedule cur_schedule = 12;
+}

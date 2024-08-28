@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message HomeAvatarTalkReq {
+	uint32 talk_id = 4;
+	uint32 avatar_id = 8;
+}

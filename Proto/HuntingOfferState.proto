@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+enum HuntingOfferState {
+	HuntingOfferState_NONE = 0;
+	HuntingOfferState_STARTED = 1;
+	HuntingOfferState_UNSTARTED = 2;
+	HuntingOfferState_SUCC = 3;
+}

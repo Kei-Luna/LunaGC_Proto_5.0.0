@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "StoreType.proto";
+
+message DropItemRsp {
+	uint64 guid = 3;
+	int32 retcode = 5;
+	StoreType store_type = 9;
+}

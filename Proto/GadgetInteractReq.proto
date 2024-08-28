@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "InterOpType.proto";
+import "ResinCostType.proto";
+
+message GadgetInteractReq {
+	uint32 ui_interact_id = 5;
+	InterOpType op_type = 4;
+	bool is_use_condense_resin = 15;
+	uint32 gadget_id = 3;
+	ResinCostType resin_cost_type = 11;
+	uint32 CHDDOFMLBLM = 9;
+	uint32 gadget_entity_id = 12;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "RegionSearchInfo.proto";
+
+message RegionSearchNotify {
+	uint32 uid = 5;
+	repeated RegionSearchInfo region_search_list = 14;
+}
