@@ -21489,7 +21489,7 @@ message HFDPPHKHACL {
 }
 
 // CmdId: 29682
-message PCAFGAMHFOA {
+message ChooseCurAvatarTeamReq {
 	uint32 team_id = 13;
 }
 
