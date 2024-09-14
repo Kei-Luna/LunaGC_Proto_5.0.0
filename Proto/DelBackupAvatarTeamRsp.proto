@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 7408
+message DelBackupAvatarTeamRsp {
+	uint32 backup_avatar_team_id = 5;
+	int32 retcode = 14;
+}
