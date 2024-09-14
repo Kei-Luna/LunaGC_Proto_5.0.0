@@ -347,7 +347,7 @@ message AAHOGJGMIKI {
 }
 
 // CmdId: 7660
-message PAKCJCLMNMG {
+message AddBackupAvatarTeamRsp {
 	int32 retcode = 5;
 }
 
@@ -1800,9 +1800,9 @@ message MHIFOAAOCFE {
 }
 
 // CmdId: 5985
-message EKAEAEABPHD {
+message ChooseCurAvatarTeamRsp {
 	int32 retcode = 7;
-	uint32 GBIEPLAIOHC = 8;
+	uint32 cur_team_id = 8;
 }
 
 message CPKHDNPIJMI {
@@ -1848,8 +1848,8 @@ message CGGNEJCICOH {
 }
 
 // CmdId: 8721
-message OBOEHFNLFOD {
-	uint32 MMKBJNCIGGG = 12;
+message DelBackupAvatarTeamReq {
+	uint32 backup_avatar_team_id = 12;
 }
 
 // CmdId: 26681
@@ -11206,8 +11206,8 @@ message WorldRoutineInfo {
 }
 
 // CmdId: 7408
-message PKJCPHLNGGJ {
-	uint32 MMKBJNCIGGG = 5;
+message DelBackupAvatarTeamRsp {
+	uint32 backup_avatar_team_id = 5;
 	int32 retcode = 14;
 }
 
@@ -21489,7 +21489,7 @@ message HFDPPHKHACL {
 }
 
 // CmdId: 29682
-message PCAFGAMHFOA {
+message ChooseCurAvatarTeamReq {
 	uint32 team_id = 13;
 }
 
@@ -29070,7 +29070,7 @@ message DGLCIOMEHOL {
 }
 
 // CmdId: 23418
-message GNHKJMIJEOC {
+message AddBackupAvatarTeamReq {
 }
 
 // CmdId: 9866
