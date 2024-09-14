@@ -1800,9 +1800,9 @@ message MHIFOAAOCFE {
 }
 
 // CmdId: 5985
-message EKAEAEABPHD {
+message ChooseCurAvatarTeamRsp {
 	int32 retcode = 7;
-	uint32 GBIEPLAIOHC = 8;
+	uint32 cur_team_id = 8;
 }
 
 message CPKHDNPIJMI {
