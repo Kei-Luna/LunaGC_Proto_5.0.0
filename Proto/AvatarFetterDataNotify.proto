@@ -3,6 +3,7 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "AvatarFetterInfo.proto";
 
+// CmdId: 4274
 message AvatarFetterDataNotify {
 	map<uint64, AvatarFetterInfo> fetter_info_map = 12;
 }
