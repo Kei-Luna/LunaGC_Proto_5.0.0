@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "StoreType.proto";
+
+message StoreItemDelNotify {
+    repeated uint64 guid_list = 11;
+    StoreType store_type = 13;
+}

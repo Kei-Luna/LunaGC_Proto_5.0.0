@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ShopGoods.proto";
+
+message BuyGoodsRsp {
+    uint32 buy_count = 6;
+    int32 retcode = 8;
+    repeated ShopGoods goods_list = 9;
+    ShopGoods goods = 14;
+    uint32 shop_type = 15;
+}
