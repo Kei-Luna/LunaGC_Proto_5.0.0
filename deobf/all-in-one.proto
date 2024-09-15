@@ -1082,10 +1082,10 @@ message EEDHBFMFFKH {
 	uint32 EJNBFCIJOMO = 2;
 }
 
-message JOEIKAFCICE {
-	uint32 count = 3;
-	uint32 item_id = 6;
-	bool is_new = 11;
+message AddNoGachaAvatarCardTransferItem {
+    uint32 count = 3;
+    uint32 item_id = 6;
+    bool is_new = 11;
 }
 
 // CmdId: 29111
@@ -14401,9 +14401,9 @@ message HJMLEOOOJLJ {
 }
 
 // CmdId: 9567
-message PGNLACLONKK {
-	repeated uint64 EDABEIDCFFO = 11;
-	StoreType store_type = 13;
+message StoreItemDelNotify {
+    repeated uint64 guid_list = 11;
+    StoreType store_type = 13;
 }
 
 // CmdId: 24403
@@ -14412,14 +14412,14 @@ message CCOHDFHFKOF {
 }
 
 // CmdId: 28082
-message MGNNGBNNFEI {
-	uint32 avatar_id = 6;
-	uint32 item_id = 7;
-	uint32 PPHABNEIMOC = 8;
-	uint32 MMLCLPFABMI = 9;
-	bool ABLNIFDMAOL = 12;
-	uint32 reason = 14;
-	repeated JOEIKAFCICE IFFNGNBBIBB = 15;
+message AddNoGachaAvatarCardNotify {
+    uint32 avatar_id = 6;
+    uint32 item_id = 7;
+    uint32 initial_level = 8;
+    uint32 initial_promote_level = 9;
+    bool is_transfer_to_item = 12;
+    uint32 reason = 14;
+    repeated AddNoGachaAvatarCardTransferItem transfer_item_list = 15;
 }
 
 // CmdId: 2265
@@ -16816,12 +16816,12 @@ message MEHPIDFEMIE {
 }
 
 // CmdId: 21
-message LODPCINKMNE {
-	uint32 DALBEPBFMFB = 6;
-	int32 retcode = 8;
-	repeated ShopGoods goods_list = 9;
-	ShopGoods KIOLEGBHKBK = 14;
-	uint32 shop_type = 15;
+message BuyGoodsRsp {
+    uint32 buy_count = 6;
+    int32 retcode = 8;
+    repeated ShopGoods goods_list = 9;
+    ShopGoods goods = 14;
+    uint32 shop_type = 15;
 }
 
 // CmdId: 24409
@@ -18326,10 +18326,10 @@ message FIEHEGABIJP {
 }
 
 // CmdId: 4523
-message OAKJHCICNHN {
-	ShopGoods KIOLEGBHKBK = 1;
-	uint32 shop_type = 14;
-	uint32 DALBEPBFMFB = 6;
+message BuyGoodsReq {
+    ShopGoods goods = 1;
+    uint32 shop_type = 14;
+    uint32 buy_count = 6;
 }
 
 // CmdId: 1499
@@ -28874,9 +28874,9 @@ message GEEEHFPLPNG {
 }
 
 // CmdId: 4216
-message NCLFINCCBGF {
-	bool OFBPBIOMCJD = 3;
-	AvatarInfo OHOAAMNLLCE = 12;
+message AvatarAddNotify {
+    bool is_in_team = 3;
+    AvatarInfo avatar = 12;
 }
 
 // CmdId: 29491
