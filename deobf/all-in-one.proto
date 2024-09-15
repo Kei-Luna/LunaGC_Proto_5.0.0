@@ -3025,27 +3025,27 @@ message JNCJMIDEGAO {
 }
 
 message ShopGoods {
-	uint32 NJCCEMPMHDI = 1;
-	uint32 begin_time = 2;
-	uint32 next_refresh_time = 3;
-	uint32 CJMMGKPFMOF = 4;
-	uint32 DJJOHOKKDBM = 5;
-	ItemParam goods_item = 6;
-	uint32 HDHJDCPHFMK = 7;
-	uint32 LPAHJGDBEPE = 8;
-	uint32 IBCGFFJGCID = 9;
-	uint32 HKBHNINJMLN = 10;
-	uint32 KMJPFMCEIFB = 11;
-	repeated ItemParam KMBAMPPHCNI = 12;
-	repeated uint32 GIICBPIGICM = 13;
-	uint32 bought_num = 14;
-	uint32 end_time = 15;
-	uint32 JLIBGEFCAHD = 590;
-	uint32 BHNAJCLPOJE = 1487;
-	uint32 KJAGOOHCNON = 1541;
-	uint32 AFOGAPGJCOH = 1587;
-	bool EHIAIOONFDH = 1748;
-	uint32 MNCAAIMGCJJ = 1942;
+    uint32 goods_id = 1;
+    uint32 begin_time = 2;
+    uint32 next_refresh_time = 3;
+    uint32 disable_type = 4;
+    uint32 mcoin = 5;
+    ItemParam goods_item = 6;
+    uint32 buy_limit = 7;
+    uint32 hcoin = 8;
+    uint32 IBCGFFJGCID = 9;
+    uint32 scoin = 10;
+    uint32 min_level = 11;
+    repeated ItemParam cost_item_list = 12;
+    repeated uint32 pre_goods_id_list = 13;
+    uint32 bought_num = 14;
+    uint32 end_time = 15;
+    uint32 max_level = 590;
+    uint32 BHNAJCLPOJE = 1487;
+    uint32 KJAGOOHCNON = 1541;
+    uint32 AFOGAPGJCOH = 1587;
+    bool EHIAIOONFDH = 1748;
+    uint32 MNCAAIMGCJJ = 1942;
 }
 
 message FNCPEFACLEP {
@@ -12457,9 +12457,9 @@ message NBKELJAFMHD {
 }
 
 // CmdId: 25192
-message AOAKBECNKJL {
-	repeated uint32 HJPPOMGGMLI = 1;
-	int32 retcode = 4;
+message GetShopmallDataRsp {
+    repeated uint32 shop_type_list = 1;
+    int32 retcode = 4;
 }
 
 message PDHBOHJEDBJ {
