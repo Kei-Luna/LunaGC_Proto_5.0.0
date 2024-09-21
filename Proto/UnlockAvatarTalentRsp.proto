@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+message UnlockAvatarTalentRsp {
+	int32 retcode = 2;
+	uint64 avatar_guid = 8;
+	uint32 talent_id = 13;
+}
