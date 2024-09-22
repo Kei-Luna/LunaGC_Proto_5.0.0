@@ -3521,7 +3521,7 @@ message ANHGFBPNHBF {
 
 message DOOICHMEGOG {
 	ODOPBOEPHMM ABCLHAALJPL = 1;
-	uint64 PADCLIPINAD = 2;
+	uint64 client_game_time = 2;
 	uint64 CGAMMLODODP = 3;
 	bool EMHAFOEPFMN = 4;
 	uint32 EIODIEHHMNB = 5;
@@ -7839,7 +7839,7 @@ message EKPABLIFILG {
 }
 
 message DFOHAFAOJFA {
-	uint64 PADCLIPINAD = 1;
+	uint64 client_game_time = 1;
 	uint64 CGAMMLODODP = 2;
 	repeated CFBJKOANGJO NDELJOAEKFF = 3;
 	repeated CFBJKOANGJO AFELFLNMOHM = 4;
@@ -8195,10 +8195,10 @@ message FMNIBNFMFAB {
 }
 
 // CmdId: 29432
-message NOPCMMBLIOD {
-	bool HDCGLELHABN = 5;
+message SkipPlayerGameTimeReq {
+	bool is_force_set = 5;
 	uint32 game_time = 1;
-	uint32 PADCLIPINAD = 12;
+	uint32 client_game_time = 12;
 }
 
 // CmdId: 29789
@@ -14263,7 +14263,7 @@ message GEEAKCHDILI {
 
 message KJIKLBIPJIJ {
 	uint64 CGAMMLODODP = 8;
-	uint64 PADCLIPINAD = 15;
+	uint64 client_game_time = 15;
 }
 
 // CmdId: 3876
@@ -14429,7 +14429,7 @@ message TowerAllDataReq {
 
 message ADABOONIDNN {
 	uint64 CGAMMLODODP = 3;
-	uint64 PADCLIPINAD = 6;
+	uint64 client_game_time = 6;
 }
 
 message OAJCFEAJHJH {
@@ -18316,7 +18316,7 @@ message LLGBDJDGKDC {
 message CDPFMFBBFJP {
 	uint32 game_time = 15;
 	uint32 DAGNBLKKJLI = 11;
-	bool HDCGLELHABN = 8;
+	bool is_force_set = 8;
 }
 
 // CmdId: 25729
@@ -21031,7 +21031,7 @@ message OJONLAAHCJI {
 message OKICBJHLHLF {
 	repeated uint32 AEPPKCKCIBP = 4;
 	int32 retcode = 6;
-	uint32 PADCLIPINAD = 7;
+	uint32 client_game_time = 7;
 	uint32 game_time = 13;
 }
 
@@ -25816,7 +25816,7 @@ message NBMGNJNGKIH {
 
 message GJIGMGECHEP {
 	HMOCJIEPPLL ABCLHAALJPL = 1;
-	uint64 PADCLIPINAD = 2;
+	uint64 client_game_time = 2;
 	uint64 CGAMMLODODP = 3;
 	bool EMHAFOEPFMN = 4;
 	HFCNCHPPHKA pos = 5;
@@ -30029,7 +30029,7 @@ message KHCNCDFCEOF {
 }
 
 message DIGPMLGLILN {
-	uint64 PADCLIPINAD = 1;
+	uint64 client_game_time = 1;
 	uint64 CGAMMLODODP = 2;
 	repeated CCNELKENFJC entity_list = 3;
 	repeated GJIGMGECHEP DGMEKIILHGP = 4;
