@@ -14633,7 +14633,7 @@ message ForceUpdateInfo {
 }
 
 // CmdId: 28252
-message KCNOOLDKOPD {
+message ChangeMpTeamAvatarRsp {
 	uint64 cur_avatar_guid = 2;
 	int32 retcode = 13;
 	repeated uint64 avatar_guid_list = 15;
@@ -25555,7 +25555,7 @@ message PlayerApplyEnterMpNotify {
 }
 
 // CmdId: 28747
-message DBEBGAGNGEG {
+message ChangeMpTeamAvatarReq {
 	repeated uint64 avatar_guid_list = 11;
 	uint64 cur_avatar_guid = 4;
 }
