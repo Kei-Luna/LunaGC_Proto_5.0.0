@@ -21028,7 +21028,7 @@ message OJONLAAHCJI {
 }
 
 // CmdId: 338
-message OKICBJHLHLF {
+message SkipPlayerGameTimeRsp {
 	repeated uint32 AEPPKCKCIBP = 4;
 	int32 retcode = 6;
 	uint32 client_game_time = 7;
