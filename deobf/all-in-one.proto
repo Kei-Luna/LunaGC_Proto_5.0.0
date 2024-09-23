@@ -8441,7 +8441,7 @@ message EntityFightPropNotify {
 }
 
 // CmdId: 25407
-message IKOMCHMHPCK {
+message GachaWishReq {
 	uint32 item_id = 2;
 	uint32 gacha_type = 4;
 	uint32 gacha_schedule_id = 13;
@@ -13713,13 +13713,13 @@ message KCNGBIDPKDL {
 }
 
 // CmdId: 23268
-message EIMIAJKOGFC {
-	uint32 gacha_sort_id = 2;
+message GachaWishRsp {
+	uint32 gacha_sort_id = 2; //wish_max_progress??
 	int32 retcode = 5;
 	uint32 gacha_type = 6;
 	uint32 gacha_schedule_id = 7;
 	uint32 wish_item_id = 12;
-	uint32 ten_cost_item_id = 13;
+	uint32 ten_cost_item_id = 13; //wish_progress??
 }
 
 message PKPKMNOGHLF {
