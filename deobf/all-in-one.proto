@@ -20100,7 +20100,7 @@ message KHFNGOAJHNC {
 }
 
 // CmdId: 24920
-message PFDDAKLDDII {
+message AvatarPropChangeReasonNotify {
 	float old_value = 2;
 	PropChangeReason reason = 5;
 	uint64 avatar_guid = 7;
@@ -29969,7 +29969,7 @@ message KBPCANIBOKN {
 }
 
 // CmdId: 25299
-message BNJBNBIEGBE {
+message AvatarSkillInfoNotify {
 	map<uint32, AvatarSkillInfo> skill_map = 13;
 	uint64 guid = 14;
 }
