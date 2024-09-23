@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 28497
+message AvatarSkillMaxChargeCountNotify {
+	uint32 max_charge_count = 6;
+	uint64 avatar_guid = 7;
+	uint32 skill_id = 15;
+}

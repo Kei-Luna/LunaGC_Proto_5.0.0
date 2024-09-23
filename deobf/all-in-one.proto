@@ -2563,7 +2563,7 @@ message PDBCEKIDAKI {
 }
 
 // CmdId: 28497
-message MFADJMCEBGN {
+message AvatarSkillMaxChargeCountNotify {
 	uint32 max_charge_count = 6;
 	uint64 avatar_guid = 7;
 	uint32 skill_id = 15;
@@ -3377,7 +3377,7 @@ message JLJBPFMEGPC {
 }
 
 // CmdId: 4410
-message KLHPNKEPAOA {
+message AvatarSkillChangeNotify {
 	uint32 cur_level = 3;
 	uint32 skill_depot_id = 6;
 	uint32 old_level = 9;
@@ -3521,7 +3521,7 @@ message ANHGFBPNHBF {
 
 message DOOICHMEGOG {
 	ODOPBOEPHMM ABCLHAALJPL = 1;
-	uint64 PADCLIPINAD = 2;
+	uint64 client_game_time = 2;
 	uint64 CGAMMLODODP = 3;
 	bool EMHAFOEPFMN = 4;
 	uint32 EIODIEHHMNB = 5;
@@ -4875,7 +4875,7 @@ message NFOCBLDNLBH {
 }
 
 // CmdId: 20328
-message CLGMBNOPKDA {
+message AvatarFightPropUpdateNotify {
 	uint64 avatar_guid = 3;
 	map<uint32, float> fight_prop_map = 7;
 }
@@ -7839,7 +7839,7 @@ message EKPABLIFILG {
 }
 
 message DFOHAFAOJFA {
-	uint64 PADCLIPINAD = 1;
+	uint64 client_game_time = 1;
 	uint64 CGAMMLODODP = 2;
 	repeated CFBJKOANGJO NDELJOAEKFF = 3;
 	repeated CFBJKOANGJO AFELFLNMOHM = 4;
@@ -8195,10 +8195,10 @@ message FMNIBNFMFAB {
 }
 
 // CmdId: 29432
-message NOPCMMBLIOD {
-	bool HDCGLELHABN = 5;
+message SkipPlayerGameTimeReq {
+	bool is_force_set = 5;
 	uint32 game_time = 1;
-	uint32 PADCLIPINAD = 12;
+	uint32 client_game_time = 12;
 }
 
 // CmdId: 29789
@@ -14263,7 +14263,7 @@ message GEEAKCHDILI {
 
 message KJIKLBIPJIJ {
 	uint64 CGAMMLODODP = 8;
-	uint64 PADCLIPINAD = 15;
+	uint64 client_game_time = 15;
 }
 
 // CmdId: 3876
@@ -14429,7 +14429,7 @@ message TowerAllDataReq {
 
 message ADABOONIDNN {
 	uint64 CGAMMLODODP = 3;
-	uint64 PADCLIPINAD = 6;
+	uint64 client_game_time = 6;
 }
 
 message OAJCFEAJHJH {
@@ -14633,7 +14633,7 @@ message ForceUpdateInfo {
 }
 
 // CmdId: 28252
-message KCNOOLDKOPD {
+message ChangeMpTeamAvatarRsp {
 	uint64 cur_avatar_guid = 2;
 	int32 retcode = 13;
 	repeated uint64 avatar_guid_list = 15;
@@ -16576,7 +16576,7 @@ message KAOOJEECPJG {
 message PKMMDCDNCLI {
 	uint32 skill_depot_id = 3;
 	uint32 entity_id = 12;
-	repeated uint32 LOBOGPPEPPF = 14;
+	repeated uint32 proud_skill_list = 14;
 	uint64 avatar_guid = 15;
 }
 
@@ -16691,7 +16691,7 @@ message CDAHJMFLLHE {
 }
 
 // CmdId: 22979
-message MNHFPODJBNK {
+message MNHFPODJBNK { //TowerAllDataRsp
 	uint32 CFECLKMEHME = 1;
 	NPLFIGEHHDE KGJNKFNPOIB = 2;
 	uint32 LICMPIDMCOI = 3;
@@ -18316,7 +18316,7 @@ message LLGBDJDGKDC {
 message CDPFMFBBFJP {
 	uint32 game_time = 15;
 	uint32 DAGNBLKKJLI = 11;
-	bool HDCGLELHABN = 8;
+	bool is_force_set = 8;
 }
 
 // CmdId: 25729
@@ -20100,7 +20100,7 @@ message KHFNGOAJHNC {
 }
 
 // CmdId: 24920
-message PFDDAKLDDII {
+message AvatarPropChangeReasonNotify {
 	float old_value = 2;
 	PropChangeReason reason = 5;
 	uint64 avatar_guid = 7;
@@ -21028,10 +21028,10 @@ message OJONLAAHCJI {
 }
 
 // CmdId: 338
-message OKICBJHLHLF {
+message SkipPlayerGameTimeRsp {
 	repeated uint32 AEPPKCKCIBP = 4;
 	int32 retcode = 6;
-	uint32 PADCLIPINAD = 7;
+	uint32 client_game_time = 7;
 	uint32 game_time = 13;
 }
 
@@ -22741,14 +22741,14 @@ message JODEBJOIOAH {
 }
 
 // CmdId: 25309
-message KLEALCOODKG {
+message AvatarSkillDepotChangeNotify {
 	uint64 avatar_guid = 1;
 	map<uint32, uint32> skill_level_map = 2;
 	uint32 skill_depot_id = 5;
 	uint32 entity_id = 6;
 	repeated uint32 talent_id_list = 7;
 	uint32 core_proud_skill_level = 8;
-	repeated uint32 LOBOGPPEPPF = 10;
+	repeated uint32 proud_skill_list = 10;
 	map<uint32, uint32> proud_skill_extra_level_map = 13;
 }
 
@@ -25555,7 +25555,7 @@ message PlayerApplyEnterMpNotify {
 }
 
 // CmdId: 28747
-message DBEBGAGNGEG {
+message ChangeMpTeamAvatarReq {
 	repeated uint64 avatar_guid_list = 11;
 	uint64 cur_avatar_guid = 4;
 }
@@ -25816,7 +25816,7 @@ message NBMGNJNGKIH {
 
 message GJIGMGECHEP {
 	HMOCJIEPPLL ABCLHAALJPL = 1;
-	uint64 PADCLIPINAD = 2;
+	uint64 client_game_time = 2;
 	uint64 CGAMMLODODP = 3;
 	bool EMHAFOEPFMN = 4;
 	HFCNCHPPHKA pos = 5;
@@ -29549,7 +29549,7 @@ message QuestListUpdateNotify {
 }
 
 // CmdId: 287
-message AOGGDBKPBED {
+message AvatarFightPropNotify {
 	map<uint32, float> fight_prop_map = 7;
 	uint64 avatar_guid = 11;
 }
@@ -29969,7 +29969,7 @@ message KBPCANIBOKN {
 }
 
 // CmdId: 25299
-message BNJBNBIEGBE {
+message AvatarSkillInfoNotify {
 	map<uint32, AvatarSkillInfo> skill_map = 13;
 	uint64 guid = 14;
 }
@@ -30029,7 +30029,7 @@ message KHCNCDFCEOF {
 }
 
 message DIGPMLGLILN {
-	uint64 PADCLIPINAD = 1;
+	uint64 client_game_time = 1;
 	uint64 CGAMMLODODP = 2;
 	repeated CCNELKENFJC entity_list = 3;
 	repeated GJIGMGECHEP DGMEKIILHGP = 4;
