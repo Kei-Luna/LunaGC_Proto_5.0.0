@@ -2563,7 +2563,7 @@ message PDBCEKIDAKI {
 }
 
 // CmdId: 28497
-message MFADJMCEBGN {
+message AvatarSkillMaxChargeCountNotify {
 	uint32 max_charge_count = 6;
 	uint64 avatar_guid = 7;
 	uint32 skill_id = 15;
@@ -3377,7 +3377,7 @@ message JLJBPFMEGPC {
 }
 
 // CmdId: 4410
-message KLHPNKEPAOA {
+message AvatarSkillChangeNotify {
 	uint32 cur_level = 3;
 	uint32 skill_depot_id = 6;
 	uint32 old_level = 9;
@@ -16576,7 +16576,7 @@ message KAOOJEECPJG {
 message PKMMDCDNCLI {
 	uint32 skill_depot_id = 3;
 	uint32 entity_id = 12;
-	repeated uint32 LOBOGPPEPPF = 14;
+	repeated uint32 proud_skill_list = 14;
 	uint64 avatar_guid = 15;
 }
 
@@ -22741,14 +22741,14 @@ message JODEBJOIOAH {
 }
 
 // CmdId: 25309
-message KLEALCOODKG {
+message AvatarSkillDepotChangeNotify {
 	uint64 avatar_guid = 1;
 	map<uint32, uint32> skill_level_map = 2;
 	uint32 skill_depot_id = 5;
 	uint32 entity_id = 6;
 	repeated uint32 talent_id_list = 7;
 	uint32 core_proud_skill_level = 8;
-	repeated uint32 LOBOGPPEPPF = 10;
+	repeated uint32 proud_skill_list = 10;
 	map<uint32, uint32> proud_skill_extra_level_map = 13;
 }
 
