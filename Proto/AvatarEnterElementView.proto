@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 88
+message AvatarEnterElementViewNotify {
+	bool is_triggerd = 14;
+	uint32 avatar_entity_id = 11;
+}

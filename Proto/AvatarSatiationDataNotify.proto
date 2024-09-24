@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "AvatarSatiationData.proto";
+
+// CmdId: 4982
+message AvatarSatiationDataNotify {
+	repeated AvatarSatiationData satiation_data_list = 7;
+}

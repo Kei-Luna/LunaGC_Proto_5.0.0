@@ -1166,7 +1166,7 @@ message LifeStateChangeNotify {
 
 message KCAGNBMDJMH {
 	uint32 EGENANPEDHD = 1;
-	uint32 IJFFKCGIAOJ = 6;
+	uint32 finish_time = 6;
 	repeated LFPFKKMJEON LKLIFPNKCLF = 12;
 	bool PDALOAAFIMN = 15;
 }
@@ -2663,7 +2663,7 @@ message PGLLKFBCGDI {
 // CmdId: 25069
 message ODLFPOKGIKI {
 	uint64 avatar_guid = 9;
-	uint32 ABLFJPMKKDA = 14;
+	uint32 buff_id = 14;
 }
 
 // CmdId: 26236
@@ -2991,7 +2991,7 @@ message BFDNMBBMOGM {
 message MDLBNBJBKKL {
 	uint32 FOONGFCLFFL = 6;
 	bool JHFMEFICAAL = 9;
-	uint32 IJFFKCGIAOJ = 12;
+	uint32 finish_time = 12;
 	uint32 DMNLDPPGOKG = 15;
 }
 
@@ -3073,7 +3073,7 @@ message BNEOGBNFNMI {
 
 // CmdId: 24202
 message GIMFHHNBFFA {
-	uint32 IJFFKCGIAOJ = 1;
+	uint32 finish_time = 1;
 	bool KNDHNELHEHA = 4;
 	bool is_success = 8;
 	uint32 BOBNLKDJOKA = 9;
@@ -5105,7 +5105,7 @@ message CANGFNBGFFN {
 message LCMJAIOGKPO {
 	uint32 MEMPKCGNNMF = 5;
 	bool is_open = 9;
-	uint32 IJFFKCGIAOJ = 12;
+	uint32 finish_time = 12;
 }
 
 message JMJAOKHPCPM {
@@ -5220,7 +5220,7 @@ message AvatarInfo {
 	AvatarExcelInfo excel_info = 26;
 	uint32 anim_hash = 27;
 	JNHGJAIIMGJ PINDEGAFOAE = 28;
-	uint32 ABLFJPMKKDA = 29;
+	uint32 buff_id = 29;
 	uint32 GCHGLANNHMC = 30;
 	uint32 trace_effect_id = 31;
 }
@@ -8670,7 +8670,7 @@ message EDHFANJDHGM {
 
 // CmdId: 6088
 message DLKEDIMHLCK {
-	uint32 IJFFKCGIAOJ = 5;
+	uint32 finish_time = 5;
 	bool is_new_record = 6;
 	bool ANKCBOMMOJB = 13;
 }
@@ -10323,7 +10323,7 @@ message MGLDGAHDHLO {
 	bool JHFMEFICAAL = 6;
 	PAAHDFJMICD reason = 9;
 	uint32 PJJAOILBFBN = 10;
-	uint32 IJFFKCGIAOJ = 15;
+	uint32 finish_time = 15;
 }
 
 message HKPGBEBLMIE {
@@ -12376,8 +12376,8 @@ message MHCIIDDPGNM {
 }
 
 // CmdId: 88
-message NKPCEOKKEBM {
-	bool EBODHKBBFOD = 14;
+message AvatarEnterElementViewNotify {
+	bool is_triggerd = 14;
 	uint32 avatar_entity_id = 11;
 }
 
@@ -13522,7 +13522,7 @@ message LOAAEEOPJAD {
 // CmdId: 650
 message EINJDDJINPG {
 	uint32 PJJAOILBFBN = 9;
-	uint32 IJFFKCGIAOJ = 10;
+	uint32 finish_time = 10;
 }
 
 // CmdId: 5400
@@ -13843,10 +13843,10 @@ message JBDDPALMIMD {
 	uint32 chapter_id = 11;
 }
 
-message AFNBGDDDOAD {
+message AvatarSatiationData {
 	uint64 avatar_guid = 5;
-	float EMDGKJGINAC = 7;
-	float IJFFKCGIAOJ = 10;
+	float penalty_finish_time = 7;
+	float finish_time = 10;
 }
 
 // CmdId: 20709
@@ -14515,7 +14515,7 @@ message HomeBlockFieldData {
 
 // CmdId: 20166
 message DFJOPCMFFHH {
-	uint32 IJFFKCGIAOJ = 2;
+	uint32 finish_time = 2;
 	bool JDCGCIOHGBH = 3;
 	uint32 gallery_id = 4;
 	bool is_new_record = 5;
@@ -20257,7 +20257,7 @@ message ODPADHFJOBJ {
 
 message CHCOFAANKLL {
 	uint32 NDEHKHCALMF = 3;
-	uint32 IJFFKCGIAOJ = 9;
+	uint32 finish_time = 9;
 }
 
 // CmdId: 6862
@@ -21853,7 +21853,7 @@ message DBPLJGFKCAJ {
 
 // CmdId: 4603
 message PPMBLECIADK {
-	uint32 ABLFJPMKKDA = 5;
+	uint32 buff_id = 5;
 	uint32 entity_id = 10;
 	uint64 avatar_guid = 15;
 }
@@ -22002,7 +22002,7 @@ message FJMJCDDODMH {
 	uint32 start_time = 10;
 	FHFDMAMPGOG CJDIONFGOCB = 11;
 	bool CEFGLEHDBEH = 12;
-	uint32 IJFFKCGIAOJ = 13;
+	uint32 finish_time = 13;
 	EOLABDOEPPI ILPJMAHLGDK = 14;
 	repeated AAGPKJDPBLK CKOLIHHMKDH = 15;
 	repeated uint32 NMEEMOCPFME = 34;
@@ -25390,8 +25390,8 @@ message IHEKKFPBADD {
 }
 
 // CmdId: 8492
-message CBAMCBOPJLB {
-	AvatarEquipAffixInfo CIFPNBBNBCG = 2;
+message AvatarEquipAffixStartNotify {
+	AvatarEquipAffixInfo equip_affix_info = 2;
 	uint64 avatar_guid = 10;
 }
 
@@ -25973,7 +25973,7 @@ message MapAreaChangeNotify {
 message OMIJFBDKONF {
 	uint32 NDEHKHCALMF = 8;
 	uint32 param = 12;
-	uint32 IJFFKCGIAOJ = 15;
+	uint32 finish_time = 15;
 }
 
 // CmdId: 1817
@@ -26574,7 +26574,7 @@ message BAMDKNIELGJ {
 
 // CmdId: 26265
 message CIMPHGDHIIM {
-	uint32 IJFFKCGIAOJ = 14;
+	uint32 finish_time = 14;
 	uint32 PJJAOILBFBN = 8;
 }
 
@@ -26689,9 +26689,9 @@ message PFCICOKEIJF {
 }
 
 // CmdId: 9225
-message MLNOHFGMIAK {
+message AbilityInvocationFailNotify {
 	string reason = 2;
-	AbilityInvokeEntry JNONMKDANHL = 9;
+	AbilityInvokeEntry invoke = 9;
 	uint32 entity_id = 15;
 }
 
@@ -27248,8 +27248,8 @@ message PlayTeamEntityInfo {
 }
 
 // CmdId: 4982
-message AKDEBOHJMHE {
-	repeated AFNBGDDDOAD ELOGGECDGNL = 7;
+message AvatarSatiationDataNotify {
+	repeated AvatarSatiationData satiation_data_list = 7;
 }
 
 message LMNOILKHCAP {
