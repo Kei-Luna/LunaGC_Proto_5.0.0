@@ -5271,7 +5271,7 @@ message GDLJLJIHMFO {
 }
 
 // CmdId: 21684
-message DGBGDLDJIAF {
+message AbilityChangeNotify {
 	uint32 entity_id = 9;
 	AbilityControlBlock ability_control_block = 12;
 }
@@ -10301,7 +10301,7 @@ message DNFIACDOMNG {
 }
 
 // CmdId: 1987
-message DLJEAHLFAPA {
+message AvatarPromoteRsp {
 	uint64 guid = 2;
 	int32 retcode = 12;
 }
@@ -13804,11 +13804,11 @@ message OFDANJNMHEK {
 }
 
 // CmdId: 28513
-message DIAFCPCDCPO {
-	uint32 OBCDOIBIJEM = 3;
+message ProudSkillExtraLevelNotify {
+	uint32 talent_index = 3;
 	uint64 avatar_guid = 4;
-	uint32 PLNGOJENAIC = 13;
-	uint32 OCGOBBALHME = 15;
+	uint32 extra_level = 13;
+	uint32 talent_type = 15;
 }
 
 // CmdId: 24137
@@ -16573,7 +16573,7 @@ message KAOOJEECPJG {
 }
 
 // CmdId: 29262
-message PKMMDCDNCLI {
+message ProudSkillChangeNotify {
 	uint32 skill_depot_id = 3;
 	uint32 entity_id = 12;
 	repeated uint32 proud_skill_list = 14;
@@ -27322,7 +27322,7 @@ message GGJOLOLOFAD {
 }
 
 // CmdId: 21972
-message MHNOADCNPMP {
+message AvatarPromoteReq {
 	uint64 guid = 8;
 }
 
