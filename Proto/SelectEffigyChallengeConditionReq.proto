@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 26519
+message SelectEffigyChallengeConditionReq {
+	repeated uint32 condition_id_list = 11;
+	uint32 challenge_id = 9;
+	uint32 difficulty_id = 10;
+}
