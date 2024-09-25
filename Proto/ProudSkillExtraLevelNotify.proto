@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+message ProudSkillExtraLevelNotify {
+	uint32 talent_index = 3;
+	uint64 avatar_guid = 4;
+	uint32 extra_level = 13;
+	uint32 talent_type = 15;
+}

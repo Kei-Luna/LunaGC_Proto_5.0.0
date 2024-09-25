@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+message AvatarPromoteRsp {
+	uint64 guid = 2;
+	int32 retcode = 12;
+}
