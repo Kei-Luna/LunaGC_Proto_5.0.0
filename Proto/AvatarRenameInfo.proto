@@ -1,8 +1,7 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-
 message AvatarRenameInfo {
-    uint32 avatar_id = 13;
-    string HEMDLGOMMKC = 15;
+	uint32 avatar_id = 13;
+	string avatar_name = 15;
 }

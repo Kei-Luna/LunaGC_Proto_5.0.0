@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+
+// CmdId: 22638
+message EvtAvatarSitDownNotify {
+	uint32 entity_id = 1;
+	uint64 chair_id = 3;
+	int32 direction = 10;
+	Vector position = 11;
+}
