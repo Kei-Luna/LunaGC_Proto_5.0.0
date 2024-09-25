@@ -12674,9 +12674,9 @@ message NKGAECCACIO {
 
 message CCNELKENFJC {
 	uint32 id = 1;
-	HFCNCHPPHKA pos = 2;
+	BreakoutVector2 pos = 2;
 	int32 rotation = 3;
-	HFCNCHPPHKA FLJBEPMLCIG = 4;
+	BreakoutVector2 FLJBEPMLCIG = 4;
 	uint32 ANECHKCDCBM = 5;
 	repeated uint32 AFCNACEHIBL = 6;
 }
@@ -22245,7 +22245,7 @@ message ACCLLDBGNMF {
 	int32 retcode = 6;
 }
 
-message HFCNCHPPHKA {
+message BreakoutVector2 {
 	int32 x = 1;
 	int32 y = 2;
 }
@@ -25819,7 +25819,7 @@ message GJIGMGECHEP {
 	uint64 client_game_time = 2;
 	uint64 CGAMMLODODP = 3;
 	bool EMHAFOEPFMN = 4;
-	HFCNCHPPHKA pos = 5;
+	BreakoutVector2 pos = 5;
 	uint32 peer_id = 6;
 	uint64 CLKEPICNJJD = 7;
 }
@@ -27886,7 +27886,7 @@ message AOPMIAHLGLA {
 
 message DHIKEICGONL {
 	uint32 uid = 1;
-	HFCNCHPPHKA pos = 2;
+	BreakoutVector2 pos = 2;
 	uint32 DEKHBEOOIEN = 3;
 	uint32 index = 4;
 	uint32 DINGFNCEIAB = 5;
