@@ -11761,8 +11761,8 @@ message FCFHKHJFIAP {
 }
 
 // CmdId: 6382
-message CPDJANEOKCO {
-	uint64 BMGNGAABDKE = 1;
+message ClientLoadingCostumeVerificationNotify {
+	uint64 prefab_hash = 1;
 	uint32 costume_id = 5;
 	uint64 guid = 15;
 }
