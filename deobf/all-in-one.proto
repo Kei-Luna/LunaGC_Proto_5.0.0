@@ -62,8 +62,8 @@ message JEGBMGEKMLF {
 }
 
 // CmdId: 29530
-message BDDCHOOPICN {
-	uint32 DHELNNBDPJE = 3;
+message AdjustWorldLevelRsp {
+	uint32 after_world_level = 3;
 	int32 retcode = 6;
 	uint32 cd_over_time = 8;
 }
@@ -251,9 +251,9 @@ message JKLEDDOBLJI {
 }
 
 // CmdId: 5095
-message LFIHLFANMKL {
-	bool APGNBJKGEEL = 4;
-	uint32 NNDJEEPMCHE = 7;
+message EvtEntityStartDieEndNotify {
+	bool immediately = 4;
+	uint32 die_state_flag = 7;
 	ForwardType forward_type = 10;
 	uint32 entity_id = 12;
 }
@@ -11220,7 +11220,7 @@ message ANEHJKNOOGJ {
 	int32 name_id = 4;
 	uint32 entity_id = 7;
 	IOLGPKJJCFI value = 11;
-	bool OCNNGOFLPIO = 14;
+	bool is_server_cache = 14;
 }
 
 // CmdId: 29811
@@ -19808,11 +19808,11 @@ message JKHDHLEMJCJ {
 }
 
 // CmdId: 7358
-message HCNBKIBKGAG {
+message EvtEntityRenderersChangedNotify {
 	uint32 entity_id = 2;
 	ForwardType forward_type = 7;
 	EntityRendererChangedInfo renderer_changed_info = 10;
-	bool OCNNGOFLPIO = 11;
+	bool is_server_cache = 11;
 }
 
 // CmdId: 24804
@@ -28402,7 +28402,7 @@ message MDBNHEBDNED {
 }
 
 // CmdId: 6549
-message COBEAJJCKPD {
+message AvatarRenameInfoNotify {
 	repeated AvatarRenameInfo avatar_rename_list = 2;
 }
 
