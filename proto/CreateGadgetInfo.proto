@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "GadgetBornType.proto";
+import "Chest.proto";
+
+message CreateGadgetInfo {
+	GadgetBornType born_type = 1;
+	Chest chest = 2;
+}

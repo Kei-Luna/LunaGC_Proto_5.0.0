@@ -2027,13 +2027,13 @@ message TeamResonanceChangeNotify {
 	repeated AvatarTeamResonanceInfo info_list = 14;
 }
 
-message DPEEKNOBNJK {
+message CreateGadgetInfo {
 	GadgetBornType born_type = 1;
-	EOJIJDMBEJI KCFMHDLGHCP = 2;
+	Chest chest = 2;
 }
 
-message EOJIJDMBEJI {
-	uint32 EMDPEDLKDLN = 1;
+message Chest {
+	uint32 chest_drop_id = 1;
 	bool is_show_cutscene = 2;
 }
 
@@ -3493,9 +3493,9 @@ message DOFEMMFNNNG {
 }
 
 // CmdId: 7039
-message OIKFPAMBPNG {
+message SceneCreateEntityRsp {
 	uint32 entity_id = 1;
-	NDFGOFPCGIC PFOGOKINGMB = 3;
+	CreateEntityInfo entity = 3;
 	int32 retcode = 12;
 }
 
@@ -11384,7 +11384,7 @@ message HMEFGCGLOGC {
 }
 
 // CmdId: 1936
-message EFLLKAMDBED {
+message SceneEntityUpdateNotify {
 	uint32 param = 2;
 	repeated SceneEntityInfo entity_list = 7;
 	VisionType appear_type = 15;
@@ -14324,7 +14324,7 @@ message LDBFNDJEBLI {
 	uint32 entity_id = 5;
 	uint32 quest_id = 11;
 	int32 retcode = 14;
-	NDFGOFPCGIC PFOGOKINGMB = 15;
+	CreateEntityInfo entity = 15;
 }
 
 // CmdId: 29575
@@ -16434,7 +16434,7 @@ message CustomDungeon {
 
 // CmdId: 21882
 message AAFFHMOMCNF {
-	NDFGOFPCGIC PFOGOKINGMB = 8;
+	CreateEntityInfo entity = 8;
 	bool DJOAFMPOJAH = 6;
 	uint32 quest_id = 9;
 	uint32 parent_quest_id = 14;
@@ -16919,10 +16919,10 @@ message JJKOLAFEFEJ {
 }
 
 // CmdId: 8882
-message DBLCKAHANOB {
-	NDFGOFPCGIC PFOGOKINGMB = 1;
-	PPLLGNGHLMB reason = 14;
-	bool LGEOLDEHABG = 2;
+message SceneCreateEntityReq {
+	CreateEntityInfo entity = 1;
+	CreateReason reason = 14;
+	bool is_destroy_when_disconnect = 2;
 }
 
 // CmdId: 29531
@@ -18695,7 +18695,7 @@ message JMAIGBMAMLL {
 // CmdId: 20087
 message NMGPFEJFCMK {
 	uint32 level = 12;
-	uint32 PFOGOKINGMB = 13;
+	uint32 entity = 13;
 }
 
 message NHEIPEOOFHN {
@@ -21232,21 +21232,21 @@ message AvatarLifeStateChangeNotify {
 	string attack_tag = 15;
 }
 
-message NDFGOFPCGIC {
+message CreateEntityInfo {
 	uint32 level = 5;
 	Vector pos = 6;
 	Vector rot = 7;
 	uint32 scene_id = 10;
 	uint32 room_id = 11;
-	uint32 PHCNLLPHPHL = 12;
+	uint32 client_unique_id = 12;
 	oneof Entity {
 		uint32 monster_id = 1;
 		uint32 npc_id = 2;
 		uint32 gadget_id = 3;
 		uint32 item_id = 4;
 	}
-	oneof LDLJAHPPLDJ {
-		DPEEKNOBNJK gadget = 13;
+	oneof entity_create_info {
+		CreateGadgetInfo gadget = 13;
 	}
 }
 
@@ -30545,7 +30545,7 @@ enum Status {
 	REWARD_TAKEN = 3;
 }
 
-enum PPLLGNGHLMB {
+enum CreateReason {
 	CREATE_NONE = 0;
 	CREATE_QUEST = 1;
 	CREATE_ENERGY = 2;
