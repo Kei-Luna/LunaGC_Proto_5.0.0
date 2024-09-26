@@ -30048,7 +30048,7 @@ message JPBNFOHALGC {
 }
 
 // CmdId: 25759
-message PPGAJFBJNNN {
+message HitClientTrivialNotify {
 	Vector position = 10;
 	uint32 owner_entity_id = 15;
 }
