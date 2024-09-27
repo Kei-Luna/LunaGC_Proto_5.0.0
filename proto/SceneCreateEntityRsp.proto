@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "CreateEntityInfo.proto";
+
+// CmdId: 7039
+message SceneCreateEntityRsp {
+	uint32 entity_id = 1;
+	CreateEntityInfo entity = 3;
+	int32 retcode = 12;
+}
